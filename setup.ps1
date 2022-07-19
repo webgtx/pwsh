@@ -1,4 +1,4 @@
-$pwsh_cfg = "$env:USERPROFILE\.config\powershell\user_profile.ps1"
+$pwsh_cfg = "$env:USERPROFILE\.config\powershell\profile.ps1"
 $winpwsh_pwd = "$env:USERPROFILE\Documents\PowerShell"
 $pwsh_pwd = "$env:USERPROFILE\Documents\WindowsPowerShell"
 
