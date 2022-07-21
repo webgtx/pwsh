@@ -13,6 +13,6 @@ Start-Job -ScriptBlock {
         $env:USERPROFILE\.config\powershell
 }
 
-Copy-Item -Recurse * $env:USERPROFILE\.config\powershell
+Copy-Item -Recurse -Force * $env:USERPROFILE\.config\powershell
 Write-Output ". $pwsh_cfg" > $winpwsh_pwd\profile.ps1 
 Copy-Item $winpwsh_pwd\profile.ps1 $pwsh_pwd\profile.ps1

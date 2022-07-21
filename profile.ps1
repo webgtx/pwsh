@@ -5,10 +5,10 @@ echo "Hello again, David :)"
 Set-Alias vim nvim
 
 # Prompt
-Import-Module posh-git
+# Import-Module posh-git
 Import-Module Terminal-Icons
 
-oh-my-posh prompt -c $env:USERPROFILE\.config\powershell\theme.json init pwsh 
+oh-my-posh prompt -c $env:USERPROFILE\.config\powershell\themes\1_shell.omp.json init pwsh 
   | Invoke-Expression
 
 Set-PSReadLineOption -PredictionSource History -PredictionViewStyle ListView
