@@ -1,0 +1,15 @@
+name: Mirroring
+
+on: [push, delete]
+
+jobs:
+  to_gitlab:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pixta-dev/repository-mirroing-action@v1
+        with: 
+          target_repo_url:
+            git@gitlab.com:$GITHUB_ACTION_REPOSITORY.git 
+          ssh_private_key:
+            ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
